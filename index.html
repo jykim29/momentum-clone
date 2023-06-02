@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in Practice</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <!-- Clock Message Section -->
+      <div class="clock-item">
+        <div class="clock-container">
+          <div class="item-1">&nbsp;</div>
+          <div class="item-2">
+            <h2 id="clock">🕒</h2>
+          </div>
+          <div class="item-3">
+            <div>
+              <p>날씨 정보</p>
+              <p id="city"></p>
+              <p id="weather"></p>
+              <p id="temp"></p>
+            </div>
+          </div>
+
+        </div>
+        <p id="clock-message"></p>
+      </div>
+  
+      <!-- Input Form Section -->
+      <div class="form-item">
+        <form id="login-form" class="hidden">
+          <h1>그런데... 너의 이름을 안 물어봤네?</h1>
+          <input id="login-input" type="text" required maxlength="5" placeholder="이름을 입력하세요." />
+          <input id="login-button" type="submit" value="확인">
+        </form>
+      </div>
+  
+      <!-- Greeting Message Section -->
+      <div id="greeting" class="greeting-item hidden"></div>
+  
+      <!-- TODO List Section -->
+      <div id="todo" class="todo-item">
+        <form id="todo-form">
+          <p>🚩 해야 할 일 🚩</p>
+          <input id="todo-input" type="text" placeholder="해야 할 일을 적어줘!" maxlength='10' required>
+        </form>
+        <ul id="todo-list">
+        </ul>
+      </div>
+
+      
+    </div>
+  
+    <footer>
+      <!-- Random Quotes Section -->
+      <div id="quote" class="quote-item">
+        <span></span>
+        <span></span>
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script type="text/javascript" src="./greetings.js"></script>
+  <script type="text/javascript" src="./clock.js"></script>
+  <script type="text/javascript" src="./quotes.js"></script>
+  <script type="text/javascript" src="./bgimages.js"></script>
+  <script type="text/javascript" src="./todo.js"></script>
+  <script type="text/javascript" src="./weather.js"></script>
+</body>
+</html>
